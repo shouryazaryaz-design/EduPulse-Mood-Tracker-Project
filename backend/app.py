@@ -15,3 +15,6 @@ def analyze():
 # For local testing, run: python app.py
 # For production (like Render), a WSGI server (Gunicorn) is used.
 # We remove the app.run() block for deployment.
+
+if __name__ == "__main__":
+    app.run(debug=True)

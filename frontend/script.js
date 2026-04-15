@@ -1,8 +1,7 @@
 async function submitMood() {
     const mood = document.getElementById('moodInput').value;
     
-    // ⬇️ PASTE YOUR ACTUAL RENDER URL HERE ⬇️
-    const RENDER_API_URL = 'https://edupulse-exclusive.onrender.com/analyze'; 
+    const RENDER_API_URL = 'http://127.0.0.1:5000/analyze';
     
     const response = await fetch(RENDER_API_URL, {
         method: 'POST',
